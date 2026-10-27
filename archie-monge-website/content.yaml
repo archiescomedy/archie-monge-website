@@ -1,0 +1,294 @@
+# =====================================================================
+#  ARCHIE MONGE — WEBSITE CONTENT
+#
+#  This is the ONLY file you need to edit to change what the site says:
+#  bio, gigs, clips, photos, socials and form messages.
+#  Save it, redeploy (or just push to GitHub), and the site updates.
+#
+#  YAML in 30 seconds:
+#   • Lines starting with "#" are notes for you. The website ignores them.
+#   • Indentation matters. Use 2 spaces per level — never the Tab key.
+#   • A line starting with "- " starts a new item in a list
+#     (a new gig, a new clip…).
+#   • Wrap text in "double quotes". If your text itself contains a double
+#     quote, use a curly one (“ ”) or an apostrophe instead.
+#   • Long text can go after a "|" on the next lines, indented. Leave an
+#     empty line between paragraphs.
+#   • Broke something? Paste the whole file into https://www.yamllint.com
+#     and it will point at the line with the problem.
+# =====================================================================
+
+
+# ---------------------------------------------------------------------
+# SITE-WIDE SETTINGS
+# ---------------------------------------------------------------------
+site:
+  name: "Archie Monge"
+  # Your web address, no slash at the end. Also find-and-replace
+  # YOUR-DOMAIN.com in the .html files, sitemap.xml and robots.txt.
+  url: "https://YOUR-DOMAIN.com"
+  # Controls how dates look. "en-GB" → "Sat 14 Nov". "en-US" → "Sat, Nov 14".
+  locale: "en-GB"
+  # The little joke at the very bottom of every page.
+  footer_joke: "All material road-tested on live humans. No hecklers were harmed (much)."
+
+
+# ---------------------------------------------------------------------
+# CONTACT & SOCIALS — shown in the footer and on the Book page
+# ---------------------------------------------------------------------
+contact:
+  email: "archiescomedy@gmail.com"
+  # One line telling bookers how fast you reply.
+  response_time: "I reply to booking enquiries within 48 hours."
+  socials:
+    # platform: picks the icon. Use one of: instagram, tiktok, youtube, x, facebook, threads, link
+    # label:    the name shown next to the icon
+    # handle:   your @name (optional)
+    # url:      the full link to your profile
+    - platform: instagram
+      label: "Instagram"
+      handle: "@archiescomedy"
+      url: "https://www.instagram.com/archiescomedy"
+    - platform: tiktok
+      label: "TikTok"
+      handle: "@archiescomedy"
+      url: "https://www.tiktok.com/@archiescomedy"
+    - platform: youtube
+      label: "YouTube"
+      handle: "@ArchiesComedy"
+      url: "https://www.youtube.com/@ArchiesComedy"
+
+
+# ---------------------------------------------------------------------
+# HOME PAGE — top banner
+# ---------------------------------------------------------------------
+hero:
+  # Your best landscape stage photo. Put the file in the /images folder
+  # and write its name here, e.g. "images/hero.jpg". ~2000px wide is plenty.
+  image: "images/hero.jpg"
+  # Describe the photo for screen readers and Google.
+  image_alt: "Archie Monge performing stand-up to a crowd under string lights"
+  # Which part of the photo to keep in view when it gets cropped on phones.
+  # "center 30%" = middle, slightly towards the top. Try "left center", "70% 40%"…
+  image_focus: "57% 40%"
+  # OPTIONAL: a tighter, square crop of the same photo for phones, so you're
+  # big in the frame on small screens. Leave as "" to use the main photo.
+  image_mobile: "images/hero-mobile.jpg"
+  # Small line above your name.
+  eyebrow: "Stand-up comedian"
+  # Your one-line pitch. Keep it under ~15 words.
+  pitch: "Half Aussie, half Norwegian, raised in Hong Kong, fully lactose intolerant. Stand-up that gets booked back."
+
+
+# ---------------------------------------------------------------------
+# CREDITS — the strip under the banner on the home page
+# ---------------------------------------------------------------------
+credits:
+  # Big numbers. Add, remove or reorder freely. Leave the list empty ( stats: [] ) to hide.
+  stats:
+    - value: "400+"
+      label: "Gigs played"
+    - value: "5–60"
+      label: "Minute sets"
+  venues_label: "Played"
+  venues:
+    - "The Comedy Store"
+    - "The Secret Comedy Club"
+    - "Hot Water Comedy Club"
+    - "Frog & Bucket"
+    - "Up The Creek"
+    - "Edinburgh Fringe"
+
+
+# ---------------------------------------------------------------------
+# ABOUT PAGE
+# ---------------------------------------------------------------------
+about:
+  photo: "images/press-portrait.jpg"
+  photo_alt: "Archie Monge smiling on stage, holding a microphone"
+  # SHORT BIO — third person, ~60 words. Bookers copy-paste this into
+  # listings and posters, so make it work on its own.
+  short_bio: >-
+    Archie Monge is an Australian-Norwegian comedian who grew up in Hong Kong
+    and has spent 400+ gigs since 2023 trying to explain how. With spots at
+    The Comedy Store, Frog & Bucket, Up The Creek, Hot Water Comedy Club, The
+    Secret Comedy Club and the Edinburgh Fringe, Archie turns a gloriously confused heritage, Gen Z ambition
+    and a deeply misunderstood Staffie into fast, act-out-heavy stand-up that
+    rooms remember and promoters book back.
+  # LONG BIO — third person, 150–250 words. Blank line = new paragraph.
+  long_bio: |
+    Archie Monge has a mum from Australia, a dad from Norway, two parents
+    who are also half English, and a family tree with a serious drinking
+    habit. Then came seven years of primary school in Hong Kong as the only
+    white kid in class. Archie has been unpacking all of it on stage ever
+    since.
+
+    The result is quick, self-deprecating stand-up full of act-outs: Viking
+    ancestors with no soy alternatives, Gen Z mates taking financial advice
+    from a kid in a race-car bed, and a middle-class Staffie called Coco
+    whose pronouns are good/girl.
+
+    Since starting out in 2023, Archie has racked up more than 400 gigs, from
+    weekend shows at The Comedy Store and Frog & Bucket to Up The Creek, Hot
+    Water Comedy Club and The Secret Comedy Club, plus compilation shows at
+    the Edinburgh Fringe. Promoters know Archie as a safe pair of hands:
+    on time, on brief, and able to warm up a cold room in the first minute.
+
+    Archie performs club sets from 5 to 60 minutes and offers clean sets for
+    corporate and private events. Off stage, Archie has quit drinking, which
+    the family still hasn't forgiven, and is growing a moustache that has
+    not been well received.
+
+
+# ---------------------------------------------------------------------
+# QUICK FACTS — the cheat-sheet bookers need (About + Book pages)
+# ---------------------------------------------------------------------
+quick_facts:
+  - label: "Set lengths"
+    value: "5, 10, 20, 40 or 60 minutes"
+  - label: "Available for"
+    value: "Clubs, festivals, corporate & private events, MC/hosting"
+  - label: "Content"
+    value: "Club set (adult language) as standard; clean set on request"
+  - label: "Style"
+    value: "Observational, self-deprecating, character act-outs"
+  - label: "Travel"
+    value: "Gigging internationally — happy to travel"
+  - label: "Language"
+    value: "English"
+
+
+# ---------------------------------------------------------------------
+# PRESS KIT — downloadable photos on the About page
+# ---------------------------------------------------------------------
+press_kit:
+  # OPTIONAL: a single .zip with everything (photos + bios + logo).
+  # Put it in the /press folder and write e.g. "press/archie-monge-press-kit.zip".
+  # Leave as "" to hide the "Download everything" button.
+  zip: ""
+  photos:
+    # file:    the full-resolution photo people download (put it in /images)
+    # preview: OPTIONAL smaller version shown on the page (faster). If empty, "file" is used.
+    # caption: short description
+    # credit:  photographer credit (newspapers need this)
+    - file: "images/press-portrait.jpg"
+      preview: "images/preview/press-portrait.jpg"
+      caption: "On stage, portrait"
+      credit: "Photo: [Photographer name]"
+    - file: "images/press-hot-water.jpg"
+      preview: "images/preview/press-hot-water.jpg"
+      caption: "Live at Hot Water Comedy Club"
+      credit: "Photo: [Photographer name]"
+    - file: "images/press-live-lights.jpg"
+      preview: "images/preview/press-live-lights.jpg"
+      caption: "Live, landscape"
+      credit: "Photo: [Photographer name]"
+    - file: "images/press-comedy-attic.jpg"
+      preview: "images/preview/press-comedy-attic.jpg"
+      caption: "Live at The Comedy Attic"
+      credit: "Photo: [Photographer name]"
+    - file: "images/press-top-secret.jpg"
+      preview: "images/preview/press-top-secret.jpg"
+      caption: "Live at Top Secret Comedy Club"
+      credit: "Photo: [Photographer name]"
+    - file: "images/press-secret-comedy-club.jpg"
+      preview: "images/preview/press-secret-comedy-club.jpg"
+      caption: "Live at The Secret Comedy Club"
+      credit: "Photo: [Photographer name]"
+    - file: "images/press-live-curtain.jpg"
+      preview: "images/preview/press-live-curtain.jpg"
+      caption: "Live, landscape (alternate)"
+      credit: "Photo: [Photographer name]"
+
+
+# ---------------------------------------------------------------------
+# CLIPS — the Clips page (and the featured clip on the home page)
+# ---------------------------------------------------------------------
+# Each clip needs:
+#   type:  youtube | tiktok | instagram | mp4
+#   url:   paste the normal share link, e.g.
+#            YouTube:   https://www.youtube.com/watch?v=dQw4w9WgXcQ  (Shorts links work too)
+#            TikTok:    https://www.tiktok.com/@archiescomedy/video/1234567890123456789
+#            Instagram: https://www.instagram.com/reel/ABC123xyz/
+#            mp4:       a video file in your /videos folder, e.g. "videos/showcase.mp4"
+#   title: what the clip is called on the page
+# Optional:
+#   venue, duration, description  — small text under the clip
+#   poster:   a thumbnail image. YouTube makes its own if you leave this out.
+#             Recommended for TikTok, Instagram and mp4 (otherwise a plain tile shows).
+#   vertical: true  — only needed for vertical YouTube videos or vertical mp4s.
+#             TikTok/Instagram are always vertical; YouTube Shorts links are detected.
+#   featured: true  — the clip shown big on the home page (pick ONE).
+# Videos only load when someone presses play, so adding lots won't slow the site.
+clips:
+  - type: youtube
+    url: "https://www.youtube.com/watch?v=AKnFJGMN1xc"
+    title: "Seven minutes at The Secret Comedy Club"
+    venue: "Brighton, August 2026"
+    duration: "7 min"
+    description: "A full club set, unedited — exactly what you'd get on the night."
+    featured: true
+  - type: youtube
+    url: "https://youtu.be/L-qwITFIMZI"
+    title: "Beat the Blackout"
+    venue: "Up The Creek"
+  - type: youtube
+    url: "https://youtu.be/9udzLD8Per0"
+    title: "Gen Z 007"
+  # Example of a self-hosted video. Remove the "# " at the start of each line to use it.
+  # - type: mp4
+  #   url: "videos/showcase.mp4"
+  #   title: "Festival showcase"
+  #   poster: "images/showcase-poster.jpg"
+  #   duration: "6:30"
+
+
+# ---------------------------------------------------------------------
+# GIGS — upcoming dates
+# ---------------------------------------------------------------------
+# Your gigs come from your Google "Gigs" calendar automatically once the
+# site is live on Netlify (README → "Gigs from Google Calendar").
+# Add a gig to that calendar and it appears here within ~15 minutes.
+#
+# You can ALSO list gigs here by hand, e.g. if you want to add one that
+# isn't in the calendar. If a gig is in both (same date + venue), this
+# file wins, so you can use it to override the calendar's details.
+# The site sorts everything by date and hides past dates automatically.
+#   date:        YYYY-MM-DD  (e.g. 2026-11-14)
+#   time:        optional, e.g. "8pm" or "20:00"
+#   venue:       name of the venue or night
+#   city:        city
+#   country:     optional
+#   ticket_url:  optional link to buy tickets. Leave out → "Tickets soon".
+#   ticket_label: optional button text instead of "Tickets" (e.g. "Free — RSVP")
+#   sold_out:    true to show "Sold out"
+#   note:        optional small line, e.g. "Headlining" or "Christmas special"
+#
+# Example (remove the "# " from each line to use it):
+#  - date: 2026-11-14
+#    time: "7:30pm"
+#    venue: "Frog & Bucket"
+#    city: "Manchester"
+#    country: "UK"
+#    ticket_url: "https://..."
+gigs: []
+
+# What the Gigs page says when there are no upcoming dates.
+gigs_empty:
+  title: "No public dates right now."
+  text: "Which means the diary has room for your night. Club, festival, office party — let's talk."
+
+
+# ---------------------------------------------------------------------
+# BOOKING FORM (Book page)
+# ---------------------------------------------------------------------
+booking:
+  # Leave empty if you host on Netlify (Netlify Forms emails you automatically).
+  # On Vercel or anywhere else: create a free form at https://formspree.io,
+  # and paste its ID here (the bit after /f/ in the form URL, e.g. "xyzabcd").
+  formspree_id: ""
+  intro: "Tell me about your night and I'll come back with availability and a quote. The more detail, the faster I can say yes."
+  # {name} is replaced with the person's first name.
+  thank_you_title: "Enquiry received."
+  thank_you_message: "Thanks, {name}. I'll be in touch within 48 hours — usually sooner. In the meantime I've already started workshopping a bit about your venue's carpet."
+  error_message: "That didn't send — the internet heckled us. Please email me directly instead:"
